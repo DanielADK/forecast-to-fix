@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link href="bs.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <meta http-equiv="Content-Type" content="text/html; charset=iso 8859-2" />
+        <title>Bleskové počasí rychle a snadně!</title>
+    </head><body class="bg-light">
+    
+        <header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">
+          <div class="container-fluid d-flex align-items-center">
+            <h1 class="d-flex align-items-center fs-4 text-white mb-0">
+              <img src="cloudy.png" width="38" height="30" class="me-3" alt="Logo">
+              Počasí rychle a snadně!
+            </h1>
+          </div>
+        </header>
+        <div class="container-fluid bg-body">
+            <div class="col-12 my-3" id="nastaveni">
+                <h1 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Poloha:</h2>
+                <label for="lang">Zeměpisná šířka</label>
+                <input type="number" class="form-control" id="lati" value="50.09">
+                <label for="lang">Zeměpisná délka</label>
+                <input type="number" class="form-control" id="long" value="14.42">
+
+                <button type="submit" class="btn btn-primary" onclick="getData()">Aktualizovat</button>
+            </div>
+
+            <div class="col-lg-5" id="temp">
+                <h3 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Předpověď:</h2>
+                <table class="table" id="teplota">
+                    <thead>
+                        <tr>
+                        <th scope="col">Čas</th>
+                        <th scope="col">Teplota v C</th>
+                        <th scope="col">Vlhkost</th>
+                        <th scope="col">Srážky</th>
+                        <th scope="col">Tlak</th>
+                        <th scope="col">Viditelnost</th>
+                        <th scope="col">Směr větru</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+    <script src="bs.js"></script>
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+</html>
